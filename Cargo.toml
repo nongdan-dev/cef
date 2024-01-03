@@ -1,0 +1,22 @@
+[package]
+name = "cellulose_fiber"
+version = "0.0.0"
+edition = "2021"
+
+[[bin]]
+name = "rebuild"
+path = "rebuild.rs"
+required-features = ["rebuild"]
+
+[dependencies]
+bindgen = { version = "0.69.1", optional = true }
+cef-bindings = { path = "cef-bindings" }
+ffmpeg-next = "6.1.0"
+widestring = "1.0.2"
+
+[build-dependencies]
+bindgen = "0.69.1"
+
+[features]
+rebuild = ["bindgen"]
+debug = []

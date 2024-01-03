@@ -1,0 +1,8 @@
+[package]
+name = "cef-bindings"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "cef_bindings"
+path = "../.local/cef-bindings.rs"
